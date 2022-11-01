@@ -12,6 +12,10 @@ import java.util.Arrays;
 			
 			1. 배열 저장
 				데이터형[] 배열명
+				=> 초기화
+				int[] arr={1,2,3,4,5}
+			
+				int[] arr=new int[10]  ==> 가장 많이 사용됨
 				------ 클래스도 가능 (클래스도 변수의 일종 : 사용자 정의)
 			2. 배열 데이터 출력 
 			3. 배열에 있는 데이터 가공
@@ -22,18 +26,19 @@ public class 문제1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] score= {100,90,85};	
-		int[] i=new int[3];
-		
-		
-		int total=0;		
-		double avg=0.0;		
-		
-		// 총합 ==> 
-		for(int r:score)
+		for(int i=0;i<score.length;i++)
 		{
-			total+=r;
+			System.out.println((i+1)+"번 학생:"+score[i]);
 		}
-		System.out.println("총합:"+total);
+		
+		// 총점을 저장하는 메모리 필요
+		int sum=0;		
+		// 총합 ==> 
+		for(int i:score)
+		{
+			sum+=i;
+		}
+		System.out.println("총합:"+sum);
 	}
 
 }

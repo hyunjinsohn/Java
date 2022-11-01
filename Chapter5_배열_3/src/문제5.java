@@ -13,22 +13,22 @@ public class 문제5 {
 		int[] arr=new int[10];
 		for(int i=0;i<arr.length;i++)
 		{
-			arr[i]=(int)(Math.random()*100);
+			arr[i]=(int)(Math.random()*100)+1;
 		}
 		System.out.println(Arrays.toString(arr));
 		
 		// 1~100까지 10개의 정수 중 짝수의 합
 		
-		int evenTotal=0;
+		int even=0,odd=0;
 		for(int i:arr)
 		{
-			if(i%2==0){
-				eventotal+=i;
-			}
+			if(i%2==0)
+				even+=i;
+			else
+				odd+=i;
 		}
-		
-			
-		System.out.println("짝수들의 합:"+evenTotal);
+		System.out.println("짝수들의 합:"+even);
+		System.out.println("홀수들의 합:"+odd);
 	}
 	
 

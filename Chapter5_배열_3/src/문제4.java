@@ -3,6 +3,7 @@
 
            public static void main(String[] args)
 	{
+	for(int i:arr)
 		int[] arr = {10, 20, 30, 40, 50};
 		int sum = 0;
 		
@@ -18,7 +19,13 @@ public class 문제4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		int[] arr= {10,20,30,40,50};
+		int sum=0;
+		for(int i:arr)
+		{
+			sum+=i;
+		}
+		System.out.println("sum="+sum);
 	}
 
 }

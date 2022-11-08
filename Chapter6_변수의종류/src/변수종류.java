@@ -138,7 +138,7 @@ class Card
 	String image;
 	int width,height;	//카드 크기
 }
-public class 변수종류1 {
+public class 변수종류 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
